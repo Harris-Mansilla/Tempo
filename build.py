@@ -8,6 +8,6 @@ html=html.replace('<script src="app.js"></script>','<script>\n'+(root/'app.js').
 icon=base64.b64encode((root/'icon.svg').read_bytes()).decode()
 html=html.replace('href="icon.svg"','href="data:image/svg+xml;base64,'+icon+'"')
 # Portable build must not fetch companion files, even if hosted as a single file.
-html=html.replace("if(location.protocol==='http:'||location.protocol==='https:'){", "if(false){")
+html=html.replace("if(location.protocol==='http:'||location.protocol==='https:'){", "if(false){")
 (root.parent/'Stride.html').write_text(html)
 print('Built',len(html),'characters')
