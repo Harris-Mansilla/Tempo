@@ -1,0 +1,18 @@
+{
+  "passed": [
+    "Calendar: Pacific dates, Labor Day, no Friday EE66 lecture, labs reserved",
+    "Exam transitions and Pacific daylight-saving conversion",
+    "Task creation, checklist, serialization, ready-to-submit lane",
+    "Submission recording and undo",
+    "Focus timer, pause, session note and progress log",
+    "Set discussion days, resolves incomplete-timetable check",
+    "Only confirmed lab dates become actual meetings",
+    "ICS preview import, unsupported recurrence notice, duplicate protection",
+    "JSON backup and calendar export contents",
+    "Dark theme and preference storage",
+    "Unreleased tasks never automatically become executable",
+    "No JavaScript exceptions across functional test suite"
+  ],
+  "browser_errors": [],
+  "method": "Chromium rendering via set_content; deterministic clock and mock localStorage due to container navigation policy. Real disk-backed localStorage and service worker were not validated in this environment."
+}
