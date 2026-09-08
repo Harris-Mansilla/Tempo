@@ -27,7 +27,6 @@ jobs:
           payloads = {
               'app': 'app.js',
               'styles': 'styles.css',
-              'stride': 'Stride.html',
               'build': 'build.py',
           }
           root = Path('.bootstrap')
@@ -39,6 +38,8 @@ jobs:
               Path(target).write_bytes(gzip.decompress(base64.b64decode(encoded)))
               print(f'Restored {target} from {len(parts)} chunk(s)')
           PY
+          python3 build.py
+          mv ../Stride.html ./Stride.html
           rm -rf .bootstrap
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
